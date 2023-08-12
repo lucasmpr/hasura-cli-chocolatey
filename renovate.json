@@ -2,5 +2,20 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base"
-  ]
+  ],
+  "regexManagers": [
+    {
+      "datasourceTemplate": "github-releases",
+      "fileMatch": [
+        "(^|/).+\\.nuspec$"
+      ],
+      "matchStrings": [
+        "<version>(?<currentValue>[a-z-0-9\\.]+)<\/version>",
+        "<releaseNotes>https:\/\/github\\.com\/(?<depName>.+)\/releases<\/releaseNotes>"
+      ]
+    }
+  ],
+  "github-actions": {
+    "enabled": false
+  }
 }
