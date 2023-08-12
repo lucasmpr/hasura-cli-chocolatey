@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>hasura-cli</id>
+    <version>2.31.0</version>
+    <packageSourceUrl>https://github.com/lucasmpr/hasura-cli-chocolatey.git</packageSourceUrl>
+    <owners>Lucas Prado</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>Hasura CLI</title>
+    <authors>Hasura</authors>
+    <!-- projectUrl is required for the community feed -->
+    <projectUrl>https://github.com/hasura/graphql-engine</projectUrl>
+    <iconUrl>https://graphql-engine-cdn.hasura.io/img/hasura_icon_colour.svg</iconUrl>
+    <licenseUrl>https://github.com/hasura/graphql-engine/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://hasura.io/docs/latest/hasura-cli/overview/</docsUrl>
+    <bugTrackerUrl>https://github.com/hasura/graphql-engine/issues</bugTrackerUrl>
+    <tags>hasura graphql</tags>
+    <summary>Hasura CLI</summary>
+    <description>The Hasura CLI is a command-line tool designed for quick and efficient interaction with Hasura's GraphQL APIs and database operations. It simplifies tasks like schema management, migrations, and authentication setup.</description>
+    <releaseNotes>https://github.com/hasura/graphql-engine/releases</releaseNotes>
+    <!-- =============================== -->      
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
