@@ -2,6 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>hasura-cli</id>
+    <!-- renovate: depName=hasura/graphql-engine -->
     <version>2.31.0</version>
     <packageSourceUrl>https://github.com/lucasmpr/hasura-cli-chocolatey.git</packageSourceUrl>
     <owners>Lucas Prado</owners>

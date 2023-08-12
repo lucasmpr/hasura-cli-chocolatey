@@ -10,12 +10,8 @@
         "(^|/).+\\.nuspec$"
       ],
       "matchStrings": [
-        "<version>(?<currentValue>[a-z-0-9\\.]+)<\/version>",
-        "<releaseNotes>https:\/\/github\\.com\/(?<depName>.+)\/releases<\/releaseNotes>"
+        "depName=(?<depName>.+) \\s*-->\\s*<version>(?<currentValue>[a-z-0-9\\.]+)<\/version>"
       ]
     }
-  ],
-  "github-actions": {
-    "enabled": false
-  }
+  ]
 }
