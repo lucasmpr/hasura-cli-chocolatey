@@ -13,10 +13,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Choco Package
-        uses: crazy-max/ghaction-chocolatey@v2
+        uses: crazy-max/ghaction-chocolatey@v3
         with:
           args: pack
       - name: Choco Push
-        uses: crazy-max/ghaction-chocolatey@v2
+        uses: crazy-max/ghaction-chocolatey@v3
         with: 
           args: push --source "'https://push.chocolatey.org/'"  --api-key ${{ secrets.CHOCO_API_KEY }} 
