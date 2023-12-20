@@ -3,7 +3,7 @@
   <metadata>
     <id>hasura-cli</id>
     <!-- renovate: depName=hasura/graphql-engine -->
-    <version>2.31.0</version>
+    <version>v2.36.1</version>
     <packageSourceUrl>https://github.com/lucasmpr/hasura-cli-chocolatey.git</packageSourceUrl>
     <owners>Lucas Prado</owners>
     <!-- ============================== -->
